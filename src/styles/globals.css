@@ -47,10 +47,3 @@ a {
     background: black;
   }
 } */
-
-.container{
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: max-content;
-  grid-template-columns: 263px auto;
-}
