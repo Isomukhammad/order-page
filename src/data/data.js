@@ -478,5 +478,5 @@ export const data = [
         "sale": 0
       }
     ]
-  },
+  }
 ]
