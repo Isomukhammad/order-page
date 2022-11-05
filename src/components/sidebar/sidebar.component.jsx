@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,7 +14,6 @@ import { useRouter } from 'next/router';
 
 const Sidebar = ({children}) => {
     const {pathname} = useRouter();
-    console.log(pathname);
     return(
         <div className = {styles.sidebar}> 
             <ul className = {styles.links}>
@@ -52,8 +53,10 @@ const Sidebar = ({children}) => {
                     </Link>
                 </li>
             </ul>
-            
-            {children}
+    
+            <div className = {styles.content}>
+                {children}
+            </div>
         </div>
     )
 }

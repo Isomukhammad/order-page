@@ -6,12 +6,13 @@ import profileImg from '../../design/icons/icon-личный кабинет.png'
 import NotificationIcon from '../../design/icons/Notification.svg'
 
 import styles from './header.module.scss'
+import Link from 'next/link';
 
 const inter = Inter();
 
 const Header = () => (
     <div className = {styles.header}>
-        <div className = {`${inter.className} ${styles.logo}`}>logo</div>
+        <Link href = '/' className = {`${inter.className} ${styles.logo}`}>logo</Link>
         <div className = {styles.info}>
             <div className = {styles.notification}>
                 <NotificationIcon/>

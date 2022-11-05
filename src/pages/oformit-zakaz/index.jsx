@@ -1,15 +1,49 @@
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import Path from '../../components/path/path.component';
+import ProductTab from '../../components/product-tab/product-tab.component';
+import SearchBar from '../../components/search-bar/search-bar.component';
+
 import Sidebar from "../../components/sidebar/sidebar.component";
+
+import { data } from '../../data/data';
 
 import styles from './oformit-zakaz.module.scss';
 
-const OformitZakaz = () => (
-    <Sidebar>
-        <div className = {styles.container}> 
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolor dicta tempore sed, nam consectetur distinctio voluptas porro harum quibusdam architecto expedita nesciunt et rerum esse ab cumque eius iusto.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima amet fugiat, aperiam, ducimus sunt cupiditate consequatur hic alias debitis quia. Voluptatum unde nihil velit fugit quos repellat autem iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloremque esse, quasi in quos dicta id! Blanditiis aspernatur quia quos beatae odit. Explicabo rem odit iusto autem est culpa consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, quam saepe, numquam quae neque soluta tempore enim eaque ex hic laborum! Ipsum blanditiis magni omnis et quo fuga ab quas!
+export const getStaticProps = async () => {
+    return{
+        props: {
+            Assortment: data
+        }
+    }
+}
+
+const OformitZakaz = ({Assortment}) => {
+    const pathname = useRouter();
+
+    return(
+    <>
+        <Head>
+            <title>Оформить заказ</title>
+        </Head>
+        <Sidebar>
+            <div className = {styles.container}>
+                <Path main = {'Завки'} category = {'Оформить заказ'}/>
+                <h3>Оформить заказ</h3>
+                <SearchBar placeholder={'Поиск по названию товара'}/>
+                <h4>Все товары ({Assortment.length})</h4>
+
+                <div className = {styles.devices}> 
+                {
+                    Assortment?.map(device => (
+                        <ProductTab key = {device.id} product = {device}/>
+                    ))
+                }
+                </div>
             </div>
-        </div>
-    </Sidebar>
-)
+        </Sidebar>
+    </>
+    )
+}
 
 export default OformitZakaz;

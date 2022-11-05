@@ -47,3 +47,11 @@ a {
     background: black;
   }
 } */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3D639D;
+}
