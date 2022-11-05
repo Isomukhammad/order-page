@@ -17,7 +17,7 @@ const ProductTab = (props) => {
             </div>
 
             <div className = {styles.description}>
-                <div className = {styles.name}>{name}</div>
+                <div className = {styles.name}>{category} {name}</div>
                 <div className = {styles.price}>{price} сум</div>
                 <div className = {styles.margin}><span>от {margin} сум</span><span>x24</span></div>
             </div>
