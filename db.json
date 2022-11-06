@@ -7,7 +7,7 @@
             "name": "Samsung Galaxy S21",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/src/design/photos/image 21.png",
+            "photo": "image 21.png",
             "additional": [
               {
                 "trade": 0,

@@ -1,7 +1,13 @@
-const DevicePage = () => {
+import Sidebar from "../../components/sidebar/sidebar.component";
+
+const Product = () => {
     return(
-        <div>Hello</div>
+        <div>
+            <Sidebar>
+                <div>Hello</div>
+            </Sidebar>
+        </div>
     )
 }
 
-export default DevicePage;
+export default Product;

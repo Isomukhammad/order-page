@@ -25,14 +25,14 @@ const Sidebar = ({children}) => {
                 </li>
 
                 <li className = {pathname === '/zakazi' ? `${styles.active}` : null}>
-                    <Link href = '/zakazi'>   
+                    <Link href = '/zakazi' className = {styles.disabled}>   
                         <ZakaziLogo/>
                         Заказы
                     </Link>
                 </li>
 
                 <li className = {pathname === '/tovari' ? `${styles.active}` : null}>
-                    <Link href = '/tovari'>
+                    <Link href = '/tovari' className = {styles.disabled}>
                         <TovariLogo/>
                         Товары
                     </Link>
@@ -40,14 +40,14 @@ const Sidebar = ({children}) => {
                 </li >
 
                 <li className = {pathname === '/otzivi' ? `${styles.active}` : null}>
-                    <Link href = '/otzivi'>
+                    <Link href = '/otzivi' className = {styles.disabled}>
                         <OtziviLogo/>
                         Отзывы
                     </Link>
                 </li>
 
-                <li className = {pathname === '/oformit-zakaz' ? `${styles.active}` : null}>
-                    <Link href = '/oformit-zakaz'>
+                <li className = {pathname.includes('/oformit-zakaz') ? `${styles.active}` : null}>
+                    <Link href = '/oformit-zakaz/page/1'>
                         <OformitLogo/>
                         Оформить заказ
                     </Link>

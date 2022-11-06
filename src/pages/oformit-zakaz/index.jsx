@@ -7,13 +7,17 @@ import SearchBar from '../../components/search-bar/search-bar.component';
 import Sidebar from "../../components/sidebar/sidebar.component";
 
 import { data } from '../../data/data';
+import { getData } from '../../utils/getData';
 
 import styles from './oformit-zakaz.module.scss';
 
 export const getStaticProps = async () => {
+    const res = await fetch('https://my-json-server.typicode.com/Isomukhammad/order-page/product');
+    const products = await res.json();
+    
     return{
         props: {
-            Assortment: data
+            Assortment: products
         }
     }
 }
