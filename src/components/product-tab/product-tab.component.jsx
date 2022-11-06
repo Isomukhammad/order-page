@@ -6,13 +6,14 @@ import BundleIcon from '../../design/icons/Акция-bundle.svg';
 import SaleIcon from '../../design/icons/Акция-скидка.png'
 
 import styles from './product-tab.module.scss';
+import Link from 'next/link';
 
 const ProductTab = (props) => {
-    const {category, name, photo, price, margin} = props.product;
+    const {id, category, name, photo, price, margin} = props.product;
     const {trade, headphones, sale} = props.product.additional[0];
 
     return(
-        <div className = {styles.container}>
+        <Link href = {`/oformit-zakaz/product/${id}`} className = {styles.container}>
             <div className = {styles.img}>
                 <div className = {styles.deviceImg}>
                     <Image 
@@ -37,7 +38,7 @@ const ProductTab = (props) => {
                 <div className = {styles.price}>{price} сум</div>
                 <div className = {styles.margin}><span>от {margin} сум</span><span>x24</span></div>
             </div>
-        </div>
+        </Link>
     )
 }
 
