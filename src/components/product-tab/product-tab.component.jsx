@@ -1,12 +1,9 @@
 import Image from 'next/image';
 import img from '../../design/photos/image 21.png'
 
-import TradeIcon from '../../design/icons/Акция-trade in.svg';
-import BundleIcon from '../../design/icons/Акция-bundle.svg';
-import SaleIcon from '../../design/icons/Акция-скидка.png'
-
 import styles from './product-tab.module.scss';
 import Link from 'next/link';
+import ProductIcons from '../product-icons/product-icons.component';
 
 const ProductTab = (props) => {
     const {id, category, name, photo, price, margin} = props.product;
@@ -24,13 +21,7 @@ const ProductTab = (props) => {
                     />
                 </div>
 
-                <div className = {styles.additional}>
-                    { trade === 1 ? <TradeIcon/> : null } 
-                    { headphones === 1 ? <BundleIcon/> : null }
-                    { trade === 0? 
-                        <Image src = {SaleIcon} alt = 'Скидка' width={36} height={28} blurDataURL/> 
-                    : null}
-                </div>
+                <ProductIcons trade = {trade} sale = {sale} headphones = {headphones}/>
             </div>
 
             <div className = {styles.description}>

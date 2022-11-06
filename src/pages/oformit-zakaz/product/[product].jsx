@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Path from '../../../components/path/path.component';
+import ProductIcons from '../../../components/product-icons/product-icons.component';
 import Sidebar from '../../../components/sidebar/sidebar.component';
 import styles from './product.module.scss'
 
@@ -21,7 +22,6 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (context) => {
-    console.log(context);
     const { params } = context;
     const res = await fetch(`https://my-json-server.typicode.com/Isomukhammad/order-page/product?id=${params.product}`);
     const products = await res.json();
@@ -34,6 +34,8 @@ export const getStaticProps = async (context) => {
 }
 
 const Product = ({Assortment}) => {
+    const {category, name, photo, price, margin} = Assortment[0];
+    const { trade, sale, headphones } = Assortment[0].additional[0];
     return(
         <>
         <Head>
@@ -46,6 +48,21 @@ const Product = ({Assortment}) => {
                     category = {'Оформить заказ'}
                     product = {`${Assortment[0].category} ${Assortment[0].name}`}
                 />
+
+                <ProductIcons trade = {trade} sale = {sale} headphones = {headphones}/>
+
+                <div className = {styles.box}>
+                    <h2>{name}</h2>
+                    <div>
+                        <div className = {styles.img}>
+
+                        </div>
+
+                        <div className = {styles.information}>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </Sidebar>
         </>
