@@ -14,12 +14,14 @@ const ProductTab = (props) => {
     return(
         <div className = {styles.container}>
             <div className = {styles.img}>
-                <Image 
-                    src = {photo}
-                    width={64}
-                    height={136} 
-                    alt = {name}
-                />
+                <div className = {styles.deviceImg}>
+                    <Image 
+                        src = {photo}
+                        layout = 'fill'
+                        objectFit='contain'
+                        alt = {name}
+                    />
+                </div>
 
                 <div className = {styles.additional}>
                     { trade === 1 ? <TradeIcon/> : null } 

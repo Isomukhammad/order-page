@@ -39,7 +39,7 @@
             "name": "Apple Airpods",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 23.png",
             "additional": [
               {
                 "trade": 1,
@@ -55,7 +55,7 @@
             "name": "Galaxy Z Fold",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 26.png",
             "additional": [
               {
                 "trade": 0,
@@ -71,7 +71,7 @@
             "name": "Apple iPhone 13 Pro",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 22-2.png",
             "additional": [
               {
                 "trade": 1,
@@ -119,7 +119,7 @@
             "name": "Apple Airpods",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 23.png",
             "additional": [
               {
                 "trade": 1,
@@ -135,7 +135,7 @@
             "name": "Galaxy Z Fold",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 26.png",
             "additional": [
               {
                 "trade": 0,
@@ -151,7 +151,7 @@
             "name": "Apple iPhone 13 Pro",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 22-2.png",
             "additional": [
               {
                 "trade": 1,
@@ -199,8 +199,7 @@
             "name": "Apple Airpods",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
-            "additional": [
+            "photo": "/image 23.png",            "additional": [
               {
                 "trade": 1,
                 "headphones": 0,
@@ -215,7 +214,7 @@
             "name": "Galaxy Z Fold",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 26.png",
             "additional": [
               {
                 "trade": 0,
@@ -231,7 +230,7 @@
             "name": "Apple iPhone 13 Pro",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 22-2.png",
             "additional": [
               {
                 "trade": 1,
@@ -279,8 +278,7 @@
             "name": "Apple Airpods",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
-            "additional": [
+            "photo": "/image 23.png",            "additional": [
               {
                 "trade": 1,
                 "headphones": 0,
@@ -295,7 +293,7 @@
             "name": "Galaxy Z Fold",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 26.png",
             "additional": [
               {
                 "trade": 0,
@@ -311,7 +309,7 @@
             "name": "Apple iPhone 13 Pro",
             "price": "7 300 000",
             "margin": "2 435 000",
-            "photo": "/image 21.png",
+            "photo": "/image 22-2.png",
             "additional": [
               {
                 "trade": 1,
