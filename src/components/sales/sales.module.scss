@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .subcontainer{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 16px;
+
+        .information {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h4{
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: -.3px;
+                color: #262728
+            }
+
+            p{
+                font-size: 15px;
+                margin-bottom: -2px;
+                line-height: 17px;
+                color: #262728;
+            }
+
+            span{
+                color: #BBC2D0;
+                line-height: 19px;
+            }
+        }
+    }
+
+    input[type = 'checkbox']{
+        appearance: none;
+        -webkit-appearance: none;
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+    }
+
+    .active {
+        background-color: #00C48C;
+        
+        &:after{
+            font-family: Font Awesome 5 Free;
+            font-weight: 600;
+            content: '\2714';
+            font-size: 24px;
+            margin-left: 2px;
+            color: white;
+        }
+    }
+    
+    .checkbox{
+        border: 1px solid #BBC2D0;
+    }
+}

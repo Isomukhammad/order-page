@@ -8,7 +8,6 @@ import styles from './page-row.module.scss'
 const PageRow = ({list}) => {
     const router = useRouter();
     const { page } = router.query;
-    console.log(typeof(page));
 
     const prevPage = () => {
         if(+page !== 1){

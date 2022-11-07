@@ -2,8 +2,9 @@
     background-color: white;
     padding: 30px;
     position: relative;
+    border-radius: 16px;
 
-    svg{
+    .busket{
         position: absolute;
         top: -20px;
         right: 16px;
@@ -18,12 +19,17 @@
     }
 
     .mainInfo{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
         .deviceImg{
             width: 480px;
             height: 380px;
             padding: 54px;
             background-color: #F3F5F8;
             position: relative;
+            border-radius: 16px;
 
             .img{
                 height: 268px;
@@ -31,5 +37,36 @@
                 position: relative;
             }
         }
+    }
+
+    .additionalInfo{
+        p{
+            &:first-child{
+                color: #00C48C;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .line {
+            opacity: 0.4;
+            border: 1px solid #BBC2D0;
+            margin: 10px 0;
+        }
+    }
+
+    .button{
+        cursor: pointer;
+        background-color: #00C48C;
+        border-radius: 26px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: .01em;
+        margin-top: 30px;
     }
 }

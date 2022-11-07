@@ -7,8 +7,13 @@ import ProductIcons from '../../../components/product-icons/product-icons.compon
 import Sidebar from '../../../components/sidebar/sidebar.component';
 
 import BasketIcon from '../../../design/icons/icon-корзина.svg';
+import TradeIcon from '../../../design/icons/Акция-trade in.svg';
+import BundleIcon from '../../../design/icons/Акция-bundle.svg';
+import SaleIcon from '../../../design/icons/Акция-скидка.png'
+import IphoneSaleIcon from '../../../design/icons/Акция-IMEI.svg'
 
 import styles from './product.module.scss'
+import Sales from '../../../components/sales/sales.component';
 
 export const getStaticPaths = async () => {
     const res = await fetch('https://my-json-server.typicode.com/Isomukhammad/order-page/product');
@@ -42,6 +47,7 @@ export const getStaticProps = async (context) => {
 const Product = ({Assortment}) => {
     const {category, name, photo, brand, price, margin} = Assortment[0];
     const { trade, sale, headphones } = Assortment[0].additional[0];
+    console.log(trade, sale, headphones)
     return(
         <>
         <Head>
@@ -54,7 +60,7 @@ const Product = ({Assortment}) => {
                     product = {`${Assortment[0].category} ${Assortment[0].name}`}
                 />
             <div className = {styles.container}>
-                <BasketIcon/>
+                <BasketIcon className = {styles.busket}/>
                 <h3>{category} {name}</h3>
                 <div className = {styles.mainInfo}>
                     <div className = {styles.deviceImg}>
@@ -73,9 +79,51 @@ const Product = ({Assortment}) => {
                     </div>
 
                     <div className = {styles.information}>
-
+                        <p>Цена телефона</p>
+                        <p>{price}</p>
+                        <p></p>
                     </div>
                 </div>
+
+                <div className = {styles.additionalInfo}>
+                    <p>Акции</p>
+                    <div styles = {styles.salesInfo}>
+                        <Sales
+                            title = {'Обменяй свой старый айфон и получи скидку на новый'}
+                            info = {'- 400 000'}
+                            status = {trade}
+                        >
+                            <TradeIcon/>
+                        </Sales>
+                        <p className = {styles.line}/>
+                        <Sales 
+                            title = {'Наушники в подарок'}
+                            info = {'Apple EarPods'}
+                            status = {headphones}
+                        >
+                            <BundleIcon/>
+                        </Sales>
+                        <p className = {styles.line}/>
+                        <Sales
+                            title = {'Скидка 20% на смартфоны'}
+                            info = {'- 10 000 сум'}
+                            status = {sale}
+                        >
+                            <Image src = {SaleIcon} alt = 'Скидка' width={36} height={28} blurDataURL/> 
+                        </Sales>
+                        <p className = {styles.line}/>
+                        <Sales 
+                            title = {'Скидка на айфоны'}
+                            subtitle = {'IMEI 012345678901234'}
+                            info = {'- 10 000'}
+                            status = {name}
+                        >
+                            <IphoneSaleIcon/>
+                        </Sales>
+                    </div>
+                </div>
+
+                <div className = {styles.button}>Добавить в корзину</div>
             </div>
         </Sidebar>
         </>

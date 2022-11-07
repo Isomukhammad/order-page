@@ -10,7 +10,7 @@ const CarouselButtons = ({images}) => {
         <div className = {styles.container}>
         {
             Object.keys(images).map((img, index) => (
-                <div key = {index} className = {styles.button}></div>
+                <div key = {index} className = {`${styles.button} ${index === 0 ? styles.active : null}`}></div>
             ))
         }
         </div>
