@@ -49,6 +49,8 @@ export const getStaticProps = async (context) => {
 const Product = ({Assortment}) => {
     const {category, name, photo, brand, price, originprice, margin} = Assortment[0];
     const { trade, sale, headphones } = Assortment[0].additional[0];
+    
+    console.log(name);
 
     return(
         <>
@@ -57,10 +59,10 @@ const Product = ({Assortment}) => {
         </Head>
         <Sidebar>
             <Path 
-                    main = {'Завки'} 
-                    category = {'Оформить заказ'}
-                    product = {`${Assortment[0].category} ${Assortment[0].name}`}
-                />
+                main = {'Заявки'} 
+                category = {'Оформить заказ'}
+                product = {`${Assortment[0].category} ${Assortment[0].name}`}
+            />
             <div className = {styles.container}>
                 <BasketIcon className = {styles.busket}/>
                 <h3>{category} {name}</h3>
@@ -75,7 +77,9 @@ const Product = ({Assortment}) => {
                             />
                         </div>
 
-                        <ProductIcons trade = {trade} sale = {sale} headphones = {headphones} name = {name}/>
+                        <div>
+                            <ProductIcons trade = {trade} sale = {sale} headphones = {headphones} name = {name}/>
+                        </div>
 
                         <CarouselButtons images = {Assortment[0]}/>
                     </div>
@@ -110,7 +114,11 @@ const Product = ({Assortment}) => {
                             <div>
                                 <p>Тип: моноблок (классический)</p>
                                 <p>Стандарт: 2G, 3G, 4G (LTE), 5G</p>
-                                <p>Операционная система: iOS14</p>
+                                <p>Операционная система: 
+                                    {
+                                        brand == 'Apple' ? ' iOS14' : ' Android 11'
+                                    }
+                                </p>
                             </div>
 
                             <div>

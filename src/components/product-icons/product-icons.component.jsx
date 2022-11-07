@@ -15,7 +15,7 @@ const ProductIcons = ({trade, headphones, sale, name}) => (
             <Image src = {SaleIcon} alt = 'Скидка' width={36} height={28} blurDataURL/> 
         : null}
         {
-            name?.includes('iphone') ? <IphoneSaleIcon/> : null 
+            name?.includes('iPhone') ? <IphoneSaleIcon/> : null 
         }
     </div>
 )

@@ -21,7 +21,7 @@ const ProductTab = (props) => {
                     />
                 </div>
 
-                <ProductIcons trade = {trade} sale = {sale} headphones = {headphones}/>
+                <ProductIcons trade = {trade} sale = {sale} headphones = {headphones} name = {name}/>
             </div>
 
             <div className = {styles.description}>

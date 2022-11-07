@@ -27,8 +27,8 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`https://my-json-server.typicode.com/Isomukhammad/order-page/product?_page=${params.page}&_limit=10`);
-    // const res = await fetch(`https://my-json-server.typicode.com/Isomukhammad/order-page/product`);
+    // const res = await fetch(`https://my-json-server.typicode.com/Isomukhammad/order-page/product?_page=${params.page}&_limit=10`);
+    const res = await fetch(`https://my-json-server.typicode.com/Isomukhammad/order-page/product`);
     const products = await res.json();
     
     return{
@@ -63,9 +63,11 @@ const Product = ({ Assortment }) => {
     
                     <div className = {styles.devices}> 
                     {
-                        Assortment?.map((device, index) => (
-                            <ProductTab key = {device.id} product = {device}/>
-                        ))
+                        Assortment?.map((device, index) => {
+                            if(index < 10){
+                                return <ProductTab key = {device.id} product = {device}/>
+                            }
+                        })
                     }
                     </div>
                     <PageRow list = {Assortment}/>
