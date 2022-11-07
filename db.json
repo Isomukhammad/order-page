@@ -6,7 +6,7 @@
             "brand": "Samsung",
             "name": "Samsung Galaxy S21",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 21.png",
             "additional": [
@@ -23,7 +23,7 @@
             "brand": "Apple",
             "name": "Apple iPhone 11 128 Gb Slim Box черный",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 22.png",
             "additional": [
@@ -40,7 +40,7 @@
             "brand": "Apple",
             "name": "Apple Airpods",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 23.png",
             "additional": [
@@ -57,7 +57,7 @@
             "brand": "Samsung",
             "name": "Galaxy Z Fold",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 26.png",
             "additional": [
@@ -74,7 +74,7 @@
             "brand": "Apple",
             "name": "Apple iPhone 11 Pro",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 22-2.png",
             "additional": [
@@ -91,7 +91,7 @@
             "brand": "Samsung",
             "name": "Samsung Galaxy S21",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 21.png",
             "additional": [
@@ -108,7 +108,7 @@
             "brand": "Apple",
             "name": "Apple iPhone 11 128 Gb Slim Box черный",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 22.png",
             "additional": [
@@ -125,7 +125,7 @@
             "brand": "Apple",
             "name": "Apple Airpods",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 23.png",
             "additional": [
@@ -142,7 +142,7 @@
             "brand": "Samsung",
             "name": "Galaxy Z Fold",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 26.png",
             "additional": [
@@ -159,7 +159,7 @@
             "brand": "Apple",
             "name": "Apple iPhone 11 Pro",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 22-2.png",
             "additional": [
@@ -176,7 +176,7 @@
             "brand": "Samsung",
             "name": "Samsung Galaxy S21",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 21.png",
             "additional": [
@@ -193,7 +193,7 @@
             "brand": "Apple",
             "name": "Apple iPhone 11 128 Gb Slim Box черный",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 22.png",
             "additional": [
@@ -210,7 +210,7 @@
             "brand": "Apple",
             "name": "Apple Airpods",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 23.png",            
             "additional": [
@@ -227,7 +227,7 @@
             "brand": "Samsung",
             "name": "Galaxy Z Fold",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 26.png",
             "additional": [
@@ -244,7 +244,7 @@
             "brand": "Apple",
             "name": "Apple iPhone 11 Pro",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 22-2.png",
             "additional": [
@@ -261,7 +261,7 @@
             "brand": "Samsung",
             "name": "Samsung Galaxy S21",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 21.png",
             "additional": [
@@ -278,7 +278,7 @@
             "brand": "Apple",
             "name": "Apple iPhone 11 128 Gb Slim Box черный",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 22.png",
             "additional": [
@@ -295,7 +295,7 @@
             "brand": "Apple",
             "name": "Apple Airpods",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 23.png",            
             "additional": [
@@ -312,7 +312,7 @@
             "brand": "Samsung",
             "name": "Galaxy Z Fold",
             "price": "7 300 000",
-            "original-price": "6 000 000",
+            "originprice": "6 000 000",
             "margin": "2 435 000",
             "photo": "/image 26.png",
             "additional": [
