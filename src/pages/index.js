@@ -1,10 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Header from '../components/header/header.component'
-import Sidebar from '../components/sidebar/sidebar.component'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+
+import { useEffect } from 'react';
+
+import Header from '../components/header/header.component';
+import Sidebar from '../components/sidebar/sidebar.component';
+
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/oformit-zakaz/page/1');
+  })
+  
   return (
     <div className={styles.container}>
       <Head>

@@ -39,7 +39,6 @@ export const getStaticProps = async (context) => {
 }
 
 const Product = ({ Assortment }) => {
-    console.log(Assortment);
     const router = useRouter();
     const {query} = router.query;
     
