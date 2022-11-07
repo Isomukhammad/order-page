@@ -9,8 +9,10 @@ import Sidebar from '../../../components/sidebar/sidebar.component';
 import BasketIcon from '../../../design/icons/icon-корзина.svg';
 import TradeIcon from '../../../design/icons/Акция-trade in.svg';
 import BundleIcon from '../../../design/icons/Акция-bundle.svg';
-import SaleIcon from '../../../design/icons/Акция-скидка.png'
-import IphoneSaleIcon from '../../../design/icons/Акция-IMEI.svg'
+import SaleIcon from '../../../design/icons/Акция-скидка.png';
+import IphoneSaleIcon from '../../../design/icons/Акция-IMEI.svg';
+import RightArrowIcon from '../../../design/icons/Arrow - Right.svg';
+
 
 import styles from './product.module.scss'
 import Sales from '../../../components/sales/sales.component';
@@ -45,9 +47,9 @@ export const getStaticProps = async (context) => {
 }
 
 const Product = ({Assortment}) => {
-    const {category, name, photo, brand, price, margin} = Assortment[0];
+    const {category, name, photo, brand, price, originprice, margin} = Assortment[0];
     const { trade, sale, headphones } = Assortment[0].additional[0];
-    console.log(trade, sale, headphones)
+
     return(
         <>
         <Head>
@@ -79,9 +81,43 @@ const Product = ({Assortment}) => {
                     </div>
 
                     <div className = {styles.information}>
-                        <p>Цена телефона</p>
-                        <p>{price}</p>
-                        <p></p>
+                        <div className = {styles.price}>
+                            <h4>Цена телефона</h4>
+                            <p>{originprice}</p>
+                        </div>
+                        <div className = {styles.overall}>
+                            <div className = {styles.marginprice}>
+                                <div className = {styles.price}>
+                                    <h4>Общая цена (с наценкой)</h4>
+                                    <p>{price}</p>
+                                </div>
+                                <div><span>{margin}</span> x3</div>
+                            </div>
+
+                            <div className = {styles.marginoptions}>
+                                <p className = {styles.active}>3 мес</p>
+                                <p>6 мес</p>
+                                <p>12 мес</p>
+                                <p>24 мес</p>
+                            </div>
+
+                            <div styles = {styles.margin}>Наценка: <span>5%</span></div>
+                        </div>
+
+                        <div className = {styles.charasteristics}>
+                            <h4>Общие харакетристики</h4>
+                            
+                            <div>
+                                <p>Тип: моноблок (классический)</p>
+                                <p>Стандарт: 2G, 3G, 4G (LTE), 5G</p>
+                                <p>Операционная система: iOS14</p>
+                            </div>
+
+                            <div>
+                                <p>Показать все</p>
+                                <RightArrowIcon/>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

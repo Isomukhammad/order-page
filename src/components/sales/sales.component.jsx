@@ -7,8 +7,6 @@ import styles from './sales.module.scss'
 import { useState,useEffect } from 'react';
 
 const Sales = ({children, title, subtitle, info, status}) => {
-    console.log(status.toString().includes('iPhone'))
-
     return(
         <div className = {styles.container}>
             <div className = {styles.subcontainer}>

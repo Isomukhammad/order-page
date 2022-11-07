@@ -2,10 +2,6 @@ import { useEffect } from 'react';
 import styles from './carousel-buttons.module.scss'
 
 const CarouselButtons = ({images}) => {
-    console.log(images);
-    useEffect(() => {
-        images.additional.map((img) => console.log(img))
-    })
     return (
         <div className = {styles.container}>
         {
