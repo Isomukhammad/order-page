@@ -15,7 +15,7 @@ export const getStaticPaths = async () => {
     const res = await fetch('https://my-json-server.typicode.com/Isomukhammad/order-page/product');
     const data = await res.json();
 
-    const paths = data.map(object => ({     
+    const paths = data?.map(object => ({     
         params: {page: object.id.toString()},
     }))
 
@@ -42,6 +42,7 @@ const Product = ({ Assortment }) => {
     console.log(Assortment);
     const router = useRouter();
     const {query} = router.query;
+    
     useEffect(() => {
         if(Assortment.length === 0){
             router.push(`/oformit-zakaz/page/1`)
