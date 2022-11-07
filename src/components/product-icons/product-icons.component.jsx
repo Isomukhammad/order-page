@@ -7,7 +7,7 @@ import IphoneSaleIcon from '../../design/icons/Акция-IMEI.svg'
 
 import styles from './product-icons.module.scss'
 
-const ProductIcons = ({trade, headphones, sale, iphone}) => (
+const ProductIcons = ({trade, headphones, sale, name}) => (
     <div className = {styles.container}>
         { trade === 1 ? <TradeIcon/> : null } 
         { headphones === 1 ? <BundleIcon/> : null }
@@ -15,7 +15,7 @@ const ProductIcons = ({trade, headphones, sale, iphone}) => (
             <Image src = {SaleIcon} alt = 'Скидка' width={36} height={28} blurDataURL/> 
         : null}
         {
-            iphone ? <IphoneSaleIcon/> : null 
+            name?.includes('iphone') ? <IphoneSaleIcon/> : null 
         }
     </div>
 )

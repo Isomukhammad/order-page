@@ -1,0 +1,35 @@
+.container{
+    background-color: white;
+    padding: 30px;
+    position: relative;
+
+    svg{
+        position: absolute;
+        top: -20px;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    h3{
+        color: #3D639D;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+    .mainInfo{
+        .deviceImg{
+            width: 480px;
+            height: 380px;
+            padding: 54px;
+            background-color: #F3F5F8;
+            position: relative;
+
+            .img{
+                height: 268px;
+                width: auto;
+                position: relative;
+            }
+        }
+    }
+}

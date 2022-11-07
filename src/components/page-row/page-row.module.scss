@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .pages{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        & :global(.active){
+            background-color: #00C48C;
+            font-size: 16px;
+            line-height: 19px;
+            color: white;
+            border-radius: 10px;
+        }
+    }
+
+    svg{
+        cursor: pointer;
+    }
+}
